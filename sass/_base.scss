@@ -1,0 +1,58 @@
+:root {
+    --lightflower: #eb2f64;
+    --flower: #ff3366;
+    --ultraflower: #ba265d;
+
+    --moongrey: #faf9f9;
+    --twilight: #f4f2f2;
+    --star: #f8eeee;
+    --ashlight: #ccc;
+
+    --night: #333;
+    --ash: #777;
+    --dim: #999;
+
+    --darkshadow: 0 2rem 6rem rgba(0, 0, 0, 3);
+    --lightshadow: 0 2rem 6rem rgba(0, 0, 0, .06);
+
+    --line: 1px solid var(--twilight);
+
+}
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smaller: 31.25em;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem ~ 10px 10px/16px = 62.5%;
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--ash);
+    background-image: linear-gradient(to right bottom, var(--lightflower), var(--ultraflower));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
